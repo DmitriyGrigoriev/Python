@@ -23,7 +23,7 @@ def getpaddedstring(string='', lenght=0):
     return string
 
 
-def encode(string='', key='') -> object:
+def encode(string: str = '', key: str = '') -> str:
     key = ''.join(key * 10)
     strchar = ''
 
@@ -45,7 +45,7 @@ def encode(string='', key='') -> object:
     return sret.upper()
 
 
-def decode(string='', key=''):
+def decode(string: str = '', key: str = '') -> str:
     code = string.replace('-', '')
     code = code.strip()
     key = key.strip()
